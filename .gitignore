@@ -1,0 +1,29 @@
+# Credentials and local runtime
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.cache/
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+*.db
+*.sqlite*
+*.pem
+*.key
+*.log
+*.har
+*.p12
+*.pfx
+data/*
+!data/catalog-v1.jsonl
+!data/catalog-v2.jsonl
+!data/catalog-v3.jsonl
+# Historical evidence remains in the private/local source checkout.
+eval/verification/*
+eval/report-*.md
+eval/recall-report-*.md
+eval/category-recall-report-*.md

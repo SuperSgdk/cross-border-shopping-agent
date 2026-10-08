@@ -1,0 +1,44 @@
+.buyer-workspace { padding: 40px 0 80px; }
+.workspace-heading { max-width: 750px; margin-bottom: 38px; }
+.workspace-heading h1 { font: 500 clamp(30px,3.6vw,46px)/1.45 var(--serif); letter-spacing: .02em; margin: 14px 0; }
+.workspace-heading h1 em { color: var(--green); font-style: normal; }
+.workspace-heading p { color: var(--muted); font-size: 15px; }
+.workspace-grid { display: grid; grid-template-columns: minmax(230px,.75fr) minmax(0,1.5fr); gap: 28px; align-items: start; }
+.workspace-library { padding: 24px; background: #f0f2eb; border-radius: 20px; }
+.workspace-editor { background: #fffefa; border: 1px solid var(--line); padding: 30px; border-radius: 22px; }
+.workspace-section-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+.workspace-section-title h2 { font: 500 21px var(--serif); margin: 0; }
+.workspace-section-title > span { color: var(--muted); font-size: 12px; }
+.workspace-section-title button,.workspace-row-actions button,.workspace-delete-link,.workspace-delete button,.workspace-error button { background: transparent; border: 0; padding: 5px 0; color: var(--green); }
+.workspace-new { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 12px; border: 1px dashed #b4c1b5; border-radius: 12px; color: var(--green); background: transparent; margin-bottom: 20px; }
+.workspace-item { position: relative; margin-top: 12px; padding: 18px; background: #fffefa; border: 1px solid transparent; border-radius: 14px; overflow-wrap: anywhere; }
+.workspace-item.selected { border-color: var(--green); }
+.workspace-item-main { text-align: left; padding: 0; border: 0; background: transparent; width: 100%; }
+.workspace-item-main strong { display: block; font-size: 15px; font-weight: 500; color: var(--green); }
+.workspace-item-main span { display: block; color: var(--muted); line-height: 1.8; margin: 8px 0 12px; }
+.workspace-item-main small { color: var(--muted); }
+.workspace-delete-link { font-size: 12px; margin-top: 10px; }
+.workspace-delete { font-size: 12px; margin-top: 14px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.workspace-delete span { flex-basis: 100%; }
+.workspace-empty { text-align: center; padding: 30px 0 18px; color: var(--muted); line-height: 2; }
+.workspace-empty > svg { width: 30px; height: 30px; opacity: .6; }
+.workspace-editor fieldset { padding: 0; border: 0; margin: 0; min-width: 0; }
+.workspace-editor label { display: block; font-size: 13px; margin: 24px 0 0; color: var(--green); }
+.workspace-editor input,.workspace-editor textarea,.workspace-editor select { display: block; width: 100%; margin-top: 9px; border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; background: var(--paper); color: var(--ink); line-height: 1.8; font: inherit; }
+.workspace-editor textarea { resize: vertical; min-height: 130px; line-height: 1.9; }
+.workspace-help { font-size: 12px; line-height: 1.9; color: var(--muted); }
+.workspace-form-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 30px; gap: 16px; }
+.workspace-form-footer > span { font-size: 12px; color: var(--muted); }
+.workspace-save { display: flex; align-items: center; gap: 15px; border: none; padding: 13px 22px; border-radius: 12px; background: var(--green); color: white; }
+.workspace-save svg,.workspace-new svg,.workspace-notice svg,.workspace-example svg { width: 18px; height: 18px; flex-shrink: 0; }
+.workspace-note,.workspace-notice,.workspace-error { border-radius: 12px; padding: 12px 18px; margin-bottom: 22px; }
+.workspace-notice { background: var(--sage); color: var(--green); display: flex; gap: 9px; align-items: center; }
+.workspace-error { background: #faeee9; color: #904a33; }
+.workspace-error button { margin-left: 15px; text-decoration: underline; }
+.workspace-example { background: var(--sage); border-radius: 12px; padding: 18px; display: flex; align-items: flex-start; gap: 12px; color: var(--green); margin: 24px 0; font-size: 12px; }
+.workspace-example p { margin: 0; line-height: 2; }
+.preference-kind { font-size: 11px; border-radius: 20px; padding: 4px 10px; background: var(--sage); color: var(--green); }
+.preference-kind.dislike { color: #935737; background: #f5eee3; }
+.workspace-row-actions { display: flex; gap: 20px; font-size: 12px; }
+@media(max-width: 1050px) { .workspace-grid { grid-template-columns: 1fr; } .workspace-library { order: 2; } }
+@media(max-width: 640px) { .buyer-workspace { padding-top: 22px; } .workspace-editor,.workspace-library { padding: 20px; } .workspace-heading { margin-bottom: 25px; } .workspace-section-title > span { display: none; } .mobile-nav { overflow-x: auto; } .mobile-nav button { flex-shrink: 0; } }
