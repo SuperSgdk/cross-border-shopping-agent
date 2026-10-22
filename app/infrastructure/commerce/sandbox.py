@@ -46,7 +46,7 @@ def create_sandbox_merchant(path: Path):
             raise HTTPException(400, "不支持的 ACP 版本")
 
     api = FastAPI(
-        title="Globex ACP sandbox — no real payment", dependencies=[Depends(authorize)]
+        title="跨境商品随心购 ACP sandbox — no real payment", dependencies=[Depends(authorize)]
     )
 
     def read(c, id):

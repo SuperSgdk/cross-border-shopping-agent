@@ -95,7 +95,7 @@ def build_app() -> FastAPI:
             state.pop("c", None)
             await c.shutdown()
 
-    api = FastAPI(title="Globex 跨境电商 Agent", version="0.4.0", lifespan=lifespan)
+    api = FastAPI(title="跨境商品随心购 跨境电商 Agent", version="0.4.0", lifespan=lifespan)
     api.add_middleware(TracingASGIMiddleware)
 
     def container() -> Container:

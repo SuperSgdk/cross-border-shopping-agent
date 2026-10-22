@@ -307,11 +307,11 @@ export default function App() {
         <button
           className="brand"
           onClick={() => switchView("shopping")}
-          aria-label="Globex 环球好物首页"
+          aria-label="跨境商品随心购首页"
         >
           <Icon name="globe" className="brand-mark" />
           <span>
-            <span className="brand-name">Globex</span>
+            <span className="brand-name">跨境商品随心购</span>
             <span className="brand-subtitle">环球好物</span>
           </span>
         </button>
@@ -388,7 +388,7 @@ export default function App() {
               onClick={() => switchView("shopping")}
             >
               <Icon name="globe" />
-              Globex
+              跨境商品随心购
             </button>
             <div className="location">
               <Icon name="pin" />
@@ -684,7 +684,7 @@ export default function App() {
                   <section className="empty-state">
                     <Icon name="chat" />
                     <h2>从第一次选购开始</h2>
-                    <p>你和 Globex 的每次交流，会为下一次选择留下一点线索。</p>
+                    <p>你和跨境商品随心购的每次交流，会为下一次选择留下一点线索。</p>
                     <button onClick={newShopping}>
                       开启新的选购
                       <Icon name="arrow" />
@@ -741,7 +741,7 @@ export default function App() {
               <ShoppingPlans {...planProps} compact />
             </div>}
             <label htmlFor="query" className="sr-only">
-              告诉 Globex 你想寻找的好物
+              告诉跨境商品随心购你想寻找的好物
             </label>
             <button type="button" className="composer-plan-toggle"
               disabled={busy||!!agent.toolApprovals?.length||!!agent.recoverableRunId||agent.confirmations.some(c=>c.status==="pending"&&!c.expired)}
@@ -781,7 +781,7 @@ export default function App() {
             </div>
           </form>
           <footer className="preview-footer">
-            <span>Globex 环球好物</span>
+            <span>跨境商品随心购</span>
             <span>·</span>
             <span>认真挑选，从容决定</span>
           </footer>

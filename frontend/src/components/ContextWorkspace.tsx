@@ -79,7 +79,7 @@ export default function ContextWorkspace({state}:{state:ReturnType<typeof useCon
    {!!view?.working?.selected?.length&&<p>关注商品：{view.working.selected.join('、')}</p>}
    {!!view?.working?.comparisons?.length&&<p>比较商品：{view.working.comparisons.join('、')}</p>}
    {!view?.working?.goal&&<p>尚未整理本次需求。你可以继续补充，完整对话会保留。</p>}
-   <small>这是本次选购的工作记录。价格与库存以重新查询为准；需要修改需求，直接告诉 Globex。</small>
+   <small>这是本次选购的工作记录。价格与库存以重新查询为准；需要修改需求，直接告诉跨境商品随心购。</small>
   </details><button type="button" onClick={()=>void compact()} disabled={!view||busy||pending||running}>{running?'正在整理…':'整理上下文'}</button></div>
   {pending&&<small>请先完成或拒绝待确认操作。</small>}
   {notice&&<p role="status">{notice}</p>}{error&&<p role="alert">{error}</p>}

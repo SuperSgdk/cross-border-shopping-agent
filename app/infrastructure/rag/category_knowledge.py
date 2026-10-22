@@ -30,7 +30,7 @@ logger = logging.getLogger(__name__)
 KNOWLEDGE_DIR = PROJECT_ROOT / "knowledge"
 
 _KB_DESCRIPTION = (
-    "Globex 跨境电商品类洞察知识库：各品类的热卖款型、关键属性判断口径、"
+    "跨境商品随心购 跨境电商品类洞察知识库：各品类的热卖款型、关键属性判断口径、"
     "价格区间参考、避坑点，以及跨境到手价/免税额度/合规通则。"
 )
 
