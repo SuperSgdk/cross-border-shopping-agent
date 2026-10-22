@@ -60,7 +60,7 @@ uv run python -m uvicorn app.presentation.server:app --host 127.0.0.1 --port 800
 npm --prefix frontend run dev -- --host 127.0.0.1 --port 5173 --strictPort
 ```
 
-作者本机页面地址为 http://127.0.0.1:5173 ，健康接口为 http://127.0.0.1:8000/health 。健康检查与模型、检索验收分别进行；各终端通过 Ctrl+C 停止服务。
+本地启动后访问 `http://127.0.0.1:5173`；该地址仅在本机有效，不是在线演示入口。后端健康检查地址为 `http://127.0.0.1:8000/health`，同样仅在本机有效。健康检查与模型、检索验收分别进行；各终端通过 Ctrl+C 停止服务。
 
 Docker 部署配置位于 `docker/docker-compose.yaml`，维护命令为：
 
