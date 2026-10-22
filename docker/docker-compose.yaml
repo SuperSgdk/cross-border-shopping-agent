@@ -1,7 +1,7 @@
 # Globex 全栈编排：app + Qdrant + Redis + React 前端
 #
 # 用法：
-#   cd globex-agent
+#   cd cross-border-shopping-agent
 #   export LLM_BASE_URL=<网关地址> LLM_API_KEY=<密钥>   # 敏感配置走环境变量，不落盘
 #   docker compose -f docker/docker-compose.yaml up -d --build
 #   前端 http://localhost:5173，后端 http://localhost:8000
